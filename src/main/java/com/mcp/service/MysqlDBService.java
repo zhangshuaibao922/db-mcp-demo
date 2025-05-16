@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class DBService {
+public class MysqlDBService {
 
     private MysqlDataSource mysqlDataSource;
     private final ObjectMapper objectMapper = new ObjectMapper();
