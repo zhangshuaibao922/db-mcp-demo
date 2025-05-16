@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.mcp</groupId>
     <artifactId>db-mcp-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>db-mcp-demo</name>
     <description>db-mcp-demo</description>
     <url/>
