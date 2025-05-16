@@ -1,6 +1,7 @@
 package com.mcp;
 
 import com.mcp.service.MysqlDBService;
+import com.mcp.service.RedisDBService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +17,7 @@ public class DbMcpDemoApplication {
 
 
     @Bean
-    public ToolCallbackProvider weatherTools(MysqlDBService mysqlDBService) {
-        return  MethodToolCallbackProvider.builder().toolObjects(mysqlDBService).build();
+    public ToolCallbackProvider dbTools(MysqlDBService mysqlDBService, RedisDBService redisDBService) {
+        return MethodToolCallbackProvider.builder().toolObjects(mysqlDBService, redisDBService).build();
     }
 }
