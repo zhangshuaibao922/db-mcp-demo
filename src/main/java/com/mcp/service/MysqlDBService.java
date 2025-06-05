@@ -183,7 +183,7 @@ public class MysqlDBService {
         }
     }
     
-    @Tool(description = "执行SQL语句")
+    @Tool(description = "执行SQL语句,在调用该方法时，请先去调用对应的getTableStructure，查询表结构，以避免sql语句报错，属性不正确")
     public String executeSQL(
             @ToolParam(description = "SQL语句") String sql
     ) {
